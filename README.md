@@ -50,6 +50,24 @@ Estes componentes são caixas de texto que exibirão os valores formatados com u
 | **`tEmulTx`** | Text | `"EMULATING"` ou `"MONITOR"` (Status de emulação do ESP32) |
 | **`tError`** | Text | `"132, 564"` (Códigos de alarme ativos separados por vírgula. Exibe `"999"` em perda de sinal) |
 
+### 3. Componentes de Imagem (Componentes do Tipo `Picture` ou propriedades `.pic`)
+Estes componentes recebem o ID numérico da imagem cadastrada no Nextion Editor:
+
+| Nome do Componente | Tipo | Significado / IDs no ESP32 |
+| :--- | :---: | :--- |
+| **`batteryPic`** / **`batPic`** | Picture | Ícone booleano de Bateria (`< 30%` = Alerta/Baixa, `>= 30%` = Normal) |
+| **`socPic`** | Picture | Barra de nível de carga da Bateria (0 a 10 níveis, base ID configurável) |
+| **`throttlePic`** | Picture | Barra de nível do acelerador (0 a 8 níveis, base ID configurável) |
+| **`slowPic`** / **`turtlePic`** | Picture | Ícone de Modo Tartaruga / Lento |
+| **`reversePic`** | Picture | Ícone de Marcha Ré ativa |
+| **`deadmanPic`** | Picture | Ícone de Operador Presente / Ausente |
+| **`pedalPic`** | Picture | Ícone de Pedal Acelerador |
+| **`breakPic`** / **`brakePic`** | Picture | Ícone de Freio acionado (Entrada física E2) |
+| **`errorPic`** | Picture | Ícone de Falha / Alarme Ativo |
+| **`manutPic`** | Picture | Ícone de Manutenção |
+| **`tempPic`** | Picture | Ícone de Alerta de Alta Temperatura |
+| **`emulPic`** | Picture | Ícone de Modo Emulação CAN Ativo |
+
 ---
 
 ## 🎨 Sugestões de Implementação Visual no Nextion Editor
